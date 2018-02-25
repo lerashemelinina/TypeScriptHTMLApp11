@@ -54,7 +54,7 @@ function nextTurn(): void {
         
     }
    
-    game.arrWinCases(mat);
+    game.arrWinCases();
 
     for (let i: number = 0; i < game.arrWinCase.length; i++) {
 
@@ -82,7 +82,7 @@ function nextTurn(): void {
 
 function getCompMove(mat: Array<Array<string>>): string {
    
-    game.arrWinCases(mat);
+    game.arrWinCases();
 
     for (let i: number = 0; i < game.arrWinCase.length; i++) {
 

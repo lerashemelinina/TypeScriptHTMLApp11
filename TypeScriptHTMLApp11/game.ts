@@ -16,17 +16,17 @@
             this._mat = mat;
         }
 
-    public arrWinCases(mat): void {
+    public arrWinCases(): void {
         console.log("setting wincases");
 
-        this.arrWinCase[0] = new WinCase(new Array<string>(mat[0][0], mat[0][1], mat[0][2]));
-        this.arrWinCase[1] = new WinCase(new Array<string>(mat[1][0], mat[1][1], mat[1][2]));
-        this.arrWinCase[2] = new WinCase(new Array<string>(mat[2][0], mat[2][1], mat[2][2]));
-        this.arrWinCase[3] = new WinCase(new Array<string>(mat[0][0], mat[1][0], mat[2][0]));
-        this.arrWinCase[4] = new WinCase(new Array<string>(mat[0][1], mat[1][1], mat[2][1]));
-        this.arrWinCase[5] = new WinCase(new Array<string>(mat[0][2], mat[1][2], mat[2][2]));
-        this.arrWinCase[6] = new WinCase(new Array<string>(mat[0][0], mat[1][1], mat[2][2]));
-        this.arrWinCase[7] = new WinCase(new Array<string>(mat[0][2], mat[1][1], mat[2][0]));
+        this.arrWinCase[0] = new WinCase(new Array<string>(this.mat[0][0], this.mat[0][1], this.mat[0][2]));
+        this.arrWinCase[1] = new WinCase(new Array<string>(this.mat[1][0], this.mat[1][1], this.mat[1][2]));
+        this.arrWinCase[2] = new WinCase(new Array<string>(this.mat[2][0], this.mat[2][1], this.mat[2][2]));
+        this.arrWinCase[3] = new WinCase(new Array<string>(this.mat[0][0], this.mat[1][0], this.mat[2][0]));
+        this.arrWinCase[4] = new WinCase(new Array<string>(this.mat[0][1], this.mat[1][1], this.mat[2][1]));
+        this.arrWinCase[5] = new WinCase(new Array<string>(this.mat[0][2], this.mat[1][2], this.mat[2][2]));
+        this.arrWinCase[6] = new WinCase(new Array<string>(this.mat[0][0], this.mat[1][1], this.mat[2][2]));
+        this.arrWinCase[7] = new WinCase(new Array<string>(this.mat[0][2], this.mat[1][1], this.mat[2][0]));
     }
 
 

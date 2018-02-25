@@ -32,7 +32,7 @@ function nextTurn() {
             game.setBoard("O", Number(mat[x1][x2]));
         }
     }
-    game.arrWinCases(mat);
+    game.arrWinCases();
     for (var i = 0; i < game.arrWinCase.length; i++) {
         var temp = game.arrWinCase[i].checkIfWins();
         if (temp) {
@@ -48,7 +48,7 @@ function nextTurn() {
     document.write(game.printBoard() + "  " + playerButton);
 }
 function getCompMove(mat) {
-    game.arrWinCases(mat);
+    game.arrWinCases();
     for (var i = 0; i < game.arrWinCase.length; i++) {
         var temp = game.arrWinCase[i].calcComputerMove();
         if (temp) {

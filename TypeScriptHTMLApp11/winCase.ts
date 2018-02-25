@@ -4,6 +4,7 @@
 
     public constructor(arr: Array<string>) {
         this.arr = arr;
+        
     }
 
 
